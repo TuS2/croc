@@ -4,67 +4,79 @@
     <meta charset="utf-8">
     <title>your turn</title>
     <style>
-.styred {
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 2.5rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: #D3D3D3;
-    background-image: linear-gradient(to top left,
-                                      rgba(0, 0, 0, .2),
-                                      rgba(0, 0, 0, .2) 30%,
-                                      rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
-}
+        /*шрифт на сранице*/
+        body{
+            font-family: Arial
+        }
+        .styred {
+            border: 0;
+            line-height: 2.5;
+            padding: 0 20px;
+            font-size: 2.5rem;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px 1px #000;
+            border-radius: 10px;
+            background-color: #D3D3D3;
+            background-image: linear-gradient(to top left,
+                                              rgba(0, 0, 0, .2),
+                                              rgba(0, 0, 0, .2) 30%,
+                                              rgba(0, 0, 0, 0));
+            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                        inset -2px -2px 3px rgba(0, 0, 0, .6);
+        }
 
-.styred:hover {
-    background-color: #D3D3D3;
-}
+        .styred:hover {
+            background-color: #D3D3D3;
+        }
 
-.styred:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
+        .styred:active {
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                        inset 2px 2px 3px rgba(0, 0, 0, .6);
+        }
 
-.styled {
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 2.5rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: #32CD32;
-    background-image: linear-gradient(to top left,
-                                      rgba(0, 0, 0, .2),
-                                      rgba(0, 0, 0, .2) 30%,
-                                      rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
-}
+        .styled {
+            border: 0;
+            line-height: 2.5;
+            padding: 0 20px;
+            font-size: 2.5rem;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px 1px #000;
+            border-radius: 10px;
+            background-color: #32CD32;
+            background-image: linear-gradient(to top left,
+                                              rgba(0, 0, 0, .2),
+                                              rgba(0, 0, 0, .2) 30%,
+                                              rgba(0, 0, 0, 0));
+            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                        inset -2px -2px 3px rgba(0, 0, 0, .6);
+        }
 
-.styled:hover {
-    background-color: #00FF00;
-}
+        .styled:hover {
+            background-color: #00FF00;
+        }
 
-.styled:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
+        .styled:active {
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                        inset 2px 2px 3px rgba(0, 0, 0, .6);
+        }
+
+        #och{
+            font-size: 40px;
+        }
+
+        #txt{
+            font-size: 40px;
+        }
 
 
     </style>
 </head>
 <body>
-<h2 style="text-align: center;">Ваша очередь настала</h2>
+<h2 id="och" style="text-align: center;">Ваша очередь настала</h2>
 
-<p style="text-align: center;">Подойдите к прилавку и сделайте заказ</p>
+<p id="txt" style="text-align: center;">Подойдите к прилавку и сделайте заказ</p>
 
 <p style="text-align: center;"><a href="get5.html"><input type="button" id="xuy" class="favorite styled" value="Я сделал(а) заказ"/></a></p>
 
