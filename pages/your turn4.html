@@ -4,21 +4,60 @@
     <meta charset="utf-8">
     <title>your turn</title>
     <style>
-   a.nubex {
-   color: #fff;
-   user-select: none; /* Убираем текстовое выделение */
-   text-decoration: none;  /* Убираем подчеркивание */
-   outline: none; /* Убираем контур вокруг ссылки */
-   background-color: #45D719; /* Цвет фона */
-   padding: 0.5em 2em; /* Отступ от текста до рамки */
-   border-radius: 50px
-   }
-   a.nubex:active {
-   background-color: #45D719; /* Цвет кнопки при нажатии */
-   }
-   a.nubex:hover {
-   background-color: #45D719; /* Цвет кнопки при наведении курсора */
-   }
+.styred {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #D3D3D3;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styred:hover {
+    background-color: #D3D3D3;
+}
+
+.styred:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #32CD32;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: #00FF00;
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
 
     </style>
 </head>
@@ -27,8 +66,8 @@
 
 <p style="text-align: center;">Подойдите к прилавку и сделайте заказ</p>
 
-<p style="text-align: center;"><a href="get5.html"><input type="button" id="xuy" value="Я сделал(а) заказ"/></a></p>
+<p style="text-align: center;"><a href="get5.html"><input type="button" id="xuy" class="favorite styled" value="Я сделал(а) заказ"/></a></p>
 
-<p style="text-align: center;"><a href="exit.html"><input type="button" id="esc" value="Выйти из очереди"/></a></p>
+<p style="text-align: center;"><a href="exit.html"><input type="button" id="esc" class="favorite styred" value="Выйти из очереди"/></a></p>
 </body>
 </html>
