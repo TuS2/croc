@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ожидание</title>
+    <style>
+
+    h2{
+      font-size: 70px;
+    }
+
+    div{
+      font-size: 70px;
+    }
+
+   .styred {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #D3D3D3;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styred:hover {
+    background-color: #D3D3D3;
+}
+
+.styred:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #32CD32;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: #00FF00;
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+    /*размер кнопки*/
+    p{
+      font-size: 50px;
+    }
+
+    p.urbex{
+      font-size: 60px;
+    }
+
+    body{
+      font-family: Arial;
+    }
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+<h2 style="text-align: center;">Вы {{ queue }} в очереди</h2>
+<p style="text-align: center;">Ожидайте</p>
+<p style="text-align: center;">Примерное время ожидания: {{ minute }} минут(ы)</p>
+<p style="text-align: center;">Не выходите с сайта</p>
+<p style="text-align: center;"><a href="7"><input type="button" id="esc" class="favorite styred"
+                                                  value="Выйти из очереди"/></a></p>
+
+</body>
+</html>
