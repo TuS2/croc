@@ -1,16 +1,29 @@
 from flask import Flask, render_template
 import requests
-import time
-import datetime
+import schedule
 
 app = Flask(__name__)
 q = 0
 a = 0
 y = 0
 m = 0
-with open("num.txt", "r") as f:
+with open("/root/croc/num.txt", "r") as f:
     y = f.read(1)
     f.close()
+
+
+def clear():
+    with open("/root/croc/num.txt", "wb"):
+        pass
+
+
+schedule.every().day.at("09:14").do(clear)
+schedule.every().day.at("10:09").do(clear)
+schedule.every().day.at("11:09").do(clear)
+schedule.every().day.at("12:09").do(clear)
+schedule.every().day.at("13:04").do(clear)
+schedule.every().day.at("13:59").do(clear)
+schedule.every().day.at("14:59").do(clear)
 
 
 @app.route('/')
@@ -18,7 +31,7 @@ with open("num.txt", "r") as f:
 def first():
     global a
     a += 1
-    with open("num.txt", "w") as f:
+    with open("/root/croc/num.txt", "w") as f:
         f.write(str(a))
         f.close()
     return render_template('main1.html')
@@ -34,11 +47,6 @@ def fourth():
     return render_template('yourturn4.html')
 
 
-@app.route('/5')
-def fiveth():
-    return render_template('get5.html')
-
-
 @app.route('/6')
 def sixth():
     return render_template('kyh.html')
@@ -50,4 +58,4 @@ def seventh():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=4567)
+    app.run(host='0.0.0.0', port=80)
